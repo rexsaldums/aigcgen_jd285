@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rexsaldums-aigcgen_jd285"
+version = "0.1.0"
+description = "把输入按语义边界切成独立单元，逐单元核对AIGC 内容生成工程师·数据去重与污染检测相关的特征并标出命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rexsaldums" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://rexsaldums.github.io"
+Repository = "https://github.com/rexsaldums/aigcgen_jd285"
+Issues = "https://github.com/rexsaldums/aigcgen_jd285/issues"
+
+[project.scripts]
+aigcgen_jd285 = "aigcgen_jd285:main"
+
+[tool.setuptools]
+py-modules = ["aigcgen_jd285"]
